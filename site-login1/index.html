@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content-main">
+        <div class="container-left">
+            <div class="logo-site">
+                <img src="img/logo-site.png" alt="" style="height: 60px;">
+                <h6
+                    style="padding-top: 25px; position: absolute;margin-left: 90px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">
+                    LufeCompany</h6>
+
+            </div>
+            <img src="img\undraw_team_up_re_84ok.svg" alt="" class="image-container-left">
+            <h2 id="legend-container-left">Start for free and get<br> attractive offers.</h2>
+        </div>
+        <div class="container-right">
+            <div class="content-panel">
+                <form action="back.php" method="post" name="form-login">
+
+
+                    <div class="title">
+                        <h2>Get's started.</h2>
+                    </div>
+
+                    <div class="sub-title">
+                        <div class="alternative-login">
+                            <p class="alternative-login">Already have on account? <a href=""
+                                    style="color: rgb(231, 101, 84);">Log in</a></p>
+                        </div>
+                    </div>
+
+                    <div class="signup-with">
+                        <button type="button" class="signup-with" id="signup-google"><img src="img/google-logo.png"
+                                alt="logo-google" style="width:15px; height:15px; scale: 1; vertical-align: middle">
+                            <span>Sign up with Google</span>
+                        </button>
+                        <button type="button" class="signup-with" id="signup-facebook"><img src="img/facebook-logo.png"
+                                alt="logo-facebook" style="width:15px; height:15px;scale: 1; vertical-align: middle;">
+                                <span>Sign up with Facebook</span>
+                        </button>
+                    </div>
+
+                    <hr noshade="noshade" class="hr">
+
+                    <div class="container-email">
+                        <label for="email-input">Email address</label><br>
+                        <img src="img/email-icon.png" alt="" class="img-icons">
+                        <input type="text" class="input-field" id="email-input" name="input_nome" placeholder="Email@adress.com" required>
+                    </div>
+
+                    <div class="container-password">
+                        <img src="img/password-icon.png" alt="" class="img-icons">
+                        <label for="password-input">Password</label><br>
+                        <input type="text" class="input-field" id="password-input" name="input_senha"
+                            placeholder="Passaword of 6 characters or more" required>
+                    </div>
+
+                    <div class="terms-agreement">
+                        <p class="terms-agreement"><input type="checkbox" id="checkbox-terms-agreement"> I agree to
+                            plataforms <a href="" id="terms-services" style="color:rgb(231, 101, 84);">Terms of Services</a>
+                            and <a href="" id="privacy-policy" style="color:rgb(231, 101, 84);">Privacy Policy</a></p>
+                    </div>
+                    
+                    <div class="register-button">
+                        <button type="submit" id="register-button">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
