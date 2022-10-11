@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.fundo {
+    text-align: center;
+    height: 100vh;
+    background-image: linear-gradient(100deg, black, red);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.txtnum{
+    background-color: white;
+    color: #000;
+    height: 40px;
+    font-size: 200%;
+    text-align: right;
+    width: 200px;;
+    margin: auto;
+    
+}
+.principal{
+    
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.699);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 15px;
+    
+    
+}
+button {
+    margin: 5px;
+    font-size: 150%;
+    background-color: rgb(31, 31, 31);
+    border-color: gray;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: black;
+}
+
+button.btnzero {
+    
+    display: inline-block;
+    margin:auto;
+    width: 90%;
+
+}
+button.btnigual {
+    margin: 3px;
+    height: 92px;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="fundo">
+        <h1 class="titulo">Lucas_felipe</h1>
+        <div class="principal">
+            <h1>Calculadora</h1>
+            <p class="txtnum"></p>
+            <table>
+                <tr>
+                    <td><button onclick="limpar()">C</button></td>
+                    <td><button></button></td>
+                    <td><button onclick="numeros('/')" >/</button></td>
+                    <td><button onclick="numeros('*')">*</button></td>               
+                </tr>
+                <tr>
+                    <td><button onclick="numeros('7')">7</button></td>
+                    <td><button onclick="numeros('8')">8</button></td>
+                    <td><button onclick="numeros('9')">9</button></td>
+                    <td><button onclick="numeros('-')">-</button></td>
+
+                </tr>
+                <tr>
+                    <td><button onclick="numeros('4')">4</button></td>
+                    <td><button onclick="numeros('5')">5</button></td>
+                    <td><button onclick="numeros('6')">6</button></td>
+                    <td><button onclick="numeros('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="numeros('1')">1</button></td>
+                    <td><button onclick="numeros('2')">2</button></td>
+                    <td><button onclick="numeros('3')">3</button></td>
+                    <td rowspan="2" ><button class="btnigual" onclick="result()">=</button></td><!-- rowspan = escolhe o numero de linhas que ocupará-->
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="btnzero" onclick="numeros(0)">0</button></td><!-- colspan = escolhe o numero de colunas que ocupará-->
+                    <td><button onclick="numeros('.')">.</button></td>
+
+
+                </tr>
+                
+            </table>
+            
+        </div>
+    </div>
+    <script>
+    
+        function numeros(num){
+            var resultado = document.querySelector(".txtnum").innerHTML;
+            document.querySelector(".txtnum").innerHTML = resultado+num;
+            
+        }
+        function limpar(){
+            var resultado = document.querySelector(".txtnum").innerHTML = "";
+        }
+    
+        function result(){
+            resultado = document.querySelector('.txtnum').innerHTML;
+            if(resultado){
+                document.querySelector('.txtnum').innerHTML = eval(resultado);
+                
+            }
+        } 
+    </script>
+
+    
+</body>
+
+</html>
