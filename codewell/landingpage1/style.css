@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 30px 250px;
+    background-color: #F3EDE5;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    height: 80px;
+}
+
+.nav-links {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    margin: auto;
+
+}
+
+.btn-try {
+    height: 55px;
+    width: 150px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 12pt;
+    background-color: rgb(0, 66, 0);
+    border-radius: 5px;
+    margin-left: 30px;
+
+}
+
+.btn-try:hover {
+    box-shadow: 0 0 6px 1px rgb(110, 110, 110);
+    transition: 500ms;
+    cursor: pointer;
+
+}
+
+section {
+    width: auto;
+    height: auto;
+    margin: 90px 0px 70px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.main-content {
+    width: auto;
+
+}
+
+#line1 {
+    font-size: 50pt;
+
+}
+
+#line2 {
+    font-size: 50pt;
+    color: rgb(255, 174, 0);
+    margin-bottom: 15px;
+
+}
+
+.subtitle {
+    margin-bottom: 15px;
+
+}
+
+.btn-try-section {
+    margin: 0;
+    margin-bottom: 25px;
+
+}
+
+.img-hero {
+    position: relative;
+
+
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+}
+
+.img-rating * {
+    margin-left: 15px;
+
+}
+
+footer {
+    text-align: center;
+
+}
+
+footer img {
+    margin: 0 20px;
+}
+
+.footer-text {
+    margin-bottom: 30px;
+}
+
+.text-p {
+    color: rgb(122, 122, 122);
+}
+.btn:hover{
+    color: #000;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+.menu-icon:hover{
+    scale: 1.1;
+}
+
+.products-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    box-sizing: border-box;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    padding: 31px 30px;
+    top: 12%;
+    font-size: 0.8rem;
+    text-align: initial;
+    display: none;
+
+}
+
+.products-section div {
+    padding: 6px 0px 10px 6px;
+
+
+}
+
+.products-section {
+    display: flex;
+}
+
+.products-icon {
+    height: 25px;
+    width: 25px;
+}
+.menu-mobile{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    padding: 18px 20px;
+    top: 100px;
+    font-size: 0.8rem;
+    text-align: initial;
+    right: 60px;
+    line-height: 1.8rem;
+    display: none;
+}
+.products-menu-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    box-sizing: border-box;
+    height: auto;
+    border-radius: 10px;
+    padding: 31px 30px;
+    top: 100px;
+    font-size: 0.8rem;
+    text-align: initial;
+    display: none;
+
+}
+
+
+
+.open {
+    display: flex;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:1400px) {
+    body {
+        margin: 30px 70px;
+    }
+
+
+}
+@media screen and (min-width:1152px){
+    .menu-mobile{
+        display: none;
+    }
+
+}
+@media only screen and (max-width:1152px) {
+
+    .nav-links,
+    .login {
+        display: none;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-icon {
+        display: block;
+
+    }
+
+    .img-hero {
+        display: none;
+    }
+
+    .footer-logos * {
+        scale: 0.8;
+        margin-bottom: 30px;
+    }
+
+    .div-rating {
+        font-size: 10pt;
+        text-align: center;
+    }
+
+    
+
+    @media only screen and (max-width:550px) {
+
+        #line1,
+        #line2 {
+            font-size: 30pt;
+        }
+
+        .div-rating {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .rating {
+            margin-bottom: 20px;
+        }
+
+        .btn-try-section {
+            width: 100%;
+        }
+        .products-menu-mobile{
+            width: auto;
+            padding: 0;
+        }
+        .menu-mobile{
+            margin: 0 2%;
+            right: 0;
+            width: 80%;
+            padding: 2%;
+            box-sizing: border-box;
+        }
+
+    }
+}
