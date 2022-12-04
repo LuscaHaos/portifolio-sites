@@ -42,8 +42,10 @@ div.div-logo h3{
     margin: 25px;
 }
 div.div-content{
+    display: flex;
+    flex-direction: column;
     width: 60%;
-    height: 60%;
+    margin: 10px 0;
 }
 div.div-tittle{
     margin-bottom: 10px;
@@ -59,6 +61,7 @@ div.div-subtittle{
 div.div-form{
     font-weight:bold;
     font-size: 0.8em;
+    height: 80%;
 }
 div.div-email-password{
     height: 70%;
@@ -87,15 +90,12 @@ div.div-password{
     border: solid 1px gray;
 }
 div.div-checkbox-forgot{ 
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     margin-bottom: 30px;
 }
-div.div-checkbox-forgot input{ 
 
-}
-div.div-checkbox-forgot span{
-    float: right;
-}
 div.div-sign{
     width: 100%;
     height: 40px;
@@ -135,4 +135,49 @@ div.div-right{
 .footer p{
     margin: 0 0 15px 15px;
     font-size: 0.8em;
+}
+@media screen and (max-width: 1300px){
+    .div-right{
+        display: none;
+
+    }
+    div.div-left{
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+@media screen and (max-width: 640px){
+
+    div.div-content{
+        width: 80%;
+    }
+    section{
+        padding: 10px 10px;
+        width: 90%;
+    }
+
+}
+@media screen and (max-width: 380px){
+    div.div-checkbox-forgot{
+        flex-direction: column;
+    }
+    .checkbox{ 
+        display: flex;
+        align-items: center;
+        margin-bottom: 2%;
+
+    }
+    .forgot{
+        display: flex;
+
+    }
+
+}
+@media screen and (max-height: 640px){
+    div.div-left *{
+        margin-bottom: 2%;
+    }
+    div.div-content {
+        scale: 0.9;
+    }
 }
