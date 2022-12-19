@@ -1,0 +1,106 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient(46deg, rgb(0, 204, 109), rgb(0, 122, 179), rgb(49, 0, 184));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#root{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 8px;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+    row-gap: 20px;
+    box-shadow: 0 0 8px 1px black;
+}
+.title{
+    font-size: 40px;
+    animation: animationShow 1s;
+}
+h2{
+    color: rgb(99, 99, 99);
+}
+@keyframes animationShow{
+    from{
+        transform:scale(0.9);
+    }
+    to{
+        transform: scale(1.0);
+    }
+}
+.container-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 50px;
+    width: 90%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+}
+input{
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+.btn-search{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.btn-search:hover{
+    scale: 1.2;
+    transition: all 0.5s;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 5%;
+    color: rgb(0, 0, 0);
+    width: 90%;
+    row-gap: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    animation: animationShow 0.5s;
+}
+@media (max-width: 580px){
+    .main-container{
+        font-size: 10px;
+        width: 100%;
+    }
+    .title{
+        font-size: 30px;
+    }
+    input{
+        font-size: 15px;
+        width: 80%;
+    }
+    .result{
+        font-size: 15px;
+    }
+    .btn-search{
+        scale: 0.8;
+    }
+}
+@media (max-width: 330px){
+    .title{
+        font-size: 25px;
+    }
+}
